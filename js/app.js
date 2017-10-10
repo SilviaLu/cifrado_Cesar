@@ -10,7 +10,7 @@ function cipher(){
 
 function decipher(texto){ // el descifrasado
   var clave =prompt('Ingresa la clave'); // peticion de la clave
-  var output=' ';// evitando el ingreso de espacis vacios
+  var output=' ';// evitando el ingreso de espacios vacios
   clave = parseInt(clave);//mi clave en numeros
   for(i=0; i<clave.length; i++){ //recorriendo y delimitando mi clave
     var formula = (texto.charCodeAt(i) 65+clave)%26 +65;//aplicando la formula a mi frase con el codigo ASCII  y aplicando el charCodeAt
@@ -20,4 +20,4 @@ function decipher(texto){ // el descifrasado
 return output; // mi retorno de la funcion
 
 }
-decipher(cipher()); // el llamado a mi funcion 
+decipher(cipher()); // el llamado a mi funcion
